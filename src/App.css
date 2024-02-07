@@ -1,0 +1,131 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scrollbar-width: smooth;
+    overflow-x: hidden;
+}
+
+#nav-items {
+    transition: all 3s ease;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    scroll-behavior: smooth;
+
+}
+
+.regular-navbar {
+    background-color: transparent;
+    transition: all 3s ease-in-out;
+    z-index: 1000;
+    max-width: 100%;
+}
+
+.floating-number {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+.navs {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.container {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input[type='text'] {
+    margin-top: 20px;
+    width: 700px;
+    transition: all .3s ease;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    margin: 20px 10px;
+    transition: all .2s ease;
+}
+
+.card .img-box {
+    cursor: pointer;
+    width: 250px;
+    padding: 10px 0px;
+    margin: 0px 20px;
+    transition: all .2s ease;
+}
+
+.card .img-box:hover img {
+    transform: scale(1.02);
+}
+
+.card .title {}
+
+.card img {
+    transition: all .2s ease;
+    width: 100%;
+    border-radius: 50px 10px 50px 10px;
+}
+
+.active {
+    color: rgba(237, 140, 140, 0.971);
+}
+
+.imgbox img {
+    width: 1500px;
+    height: 350px;
+    filter: brightness(55%);
+}
+
+#text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#item-img {
+    border-radius: 10px 50px 10px 50px;
+}
+
+.instructions {
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.instructions:first-letter {
+    font-size: 50px;
+}

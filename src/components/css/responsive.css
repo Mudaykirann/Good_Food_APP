@@ -1,0 +1,65 @@
+@media screen and (max-width:845px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    input[type='text'] {
+        width: 500px;
+    }
+
+    .navs {
+        width: 100%;
+    }
+
+    .regular-navbar {
+        width: 100%;
+    }
+
+    .floating-number {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    input[type='text'] {
+        width: 270px;
+    }
+
+    #hamburger {
+        cursor: pointer;
+        display: block;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #nav-item {
+        margin: 7px auto;
+    }
+
+    #nav-items.active {
+        position: absolute;
+        top: 18%;
+        z-index: 1002;
+        background-color: white;
+        width: 100%;
+        transition: 3s ease;
+        transform-origin: top;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 180px;
+    }
+
+    #nav-items {
+        display: none;
+    }
+}
